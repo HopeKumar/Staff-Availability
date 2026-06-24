@@ -4,6 +4,7 @@
 
 **Project Title:** StaffAvail – IoT Based Staff Availability Monitoring System  
 **Student Names:** Sanjay.V & J Hope Kumar 
+
 **Institution:** Kristu Jayanti (Deemed To Be University)
 **Academic Year:** 2026–2027  
 
@@ -94,7 +95,7 @@ The Physical Layer contains RFID cards and the MFRC522 reader. The Edge Controll
 
 The Vert.x backend is responsible for receiving attendance events, processing RFID transactions asynchronously, maintaining staff availability state, and storing attendance records in MongoDB.
 
-![Figure 3. StaffAvail System Architecture](/images/System Architecture Diagram.png)
+![Figure 3. StaffAvail System Architecture](images/System Architecture Diagram.PNG)
 
 **Figure 3. StaffAvail System Architecture**
 
@@ -259,7 +260,7 @@ The wiring arrangement shown in Figure 2 enabled stable communication among all 
 
 ### Backend Processing Log
 
-![Figure 4. Backend Attendance Event Processing](images/Backend Log.jpeg)
+![Figure 4. Backend Attendance Event Processing](images/Backend Log.JPG)
 
 **Figure 4. Backend Attendance Event Processing**
 
