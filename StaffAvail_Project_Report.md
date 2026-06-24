@@ -4,7 +4,6 @@
 
 **Project Title:** StaffAvail – IoT Based Staff Availability Monitoring System  
 **Student Names:** Sanjay.V & J Hope Kumar 
-
 **Institution:** Kristu Jayanti (Deemed To Be University)
 **Academic Year:** 2026–2027  
 
@@ -125,7 +124,7 @@ The active buzzer generates audible alerts to confirm successful attendance regi
 
 ### Pin Connection Diagram
 
-![Figure 1. ESP32 Peripheral Pin Connections](images/Circuit Diagram with Pins .PNG)
+![Figure 1. ESP32 Peripheral Pin Connections](./images/Circuit Diagram with Pins .PNG)
 
 **Figure 1. ESP32 Peripheral Pin Connections**
 
