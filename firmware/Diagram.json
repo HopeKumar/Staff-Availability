@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 46.34,
+      "left": -82.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led-ring",
+      "id": "ring1",
+      "top": -66.56,
+      "left": 173.99,
+      "attrs": { "pixels": "16" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -291.2,
+      "left": 63.2,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "board-mfrc522",
+      "id": "rfid1",
+      "top": 174.84,
+      "left": 131.45,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -16.8,
+      "left": -55.8,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ring1:DIN", "esp:14", "green", [ "v0" ] ],
+    [ "ring1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "ring1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "lcd1:GND", "esp:GND.1", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "esp:5V", "red", [ "h0" ] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "h-220.8", "v480.2", "h144" ] ],
+    [ "lcd1:SCL", "esp:22", "green", [ "h-240", "v461.1", "h201.6" ] ],
+    [ "esp:5", "rfid1:SDA", "green", [ "v19.2", "h153.6", "v-105.6", "h163.2" ] ],
+    [ "esp:18", "rfid1:SCK", "green", [ "v19.2", "h144", "v-105.6", "h153.6" ] ],
+    [ "esp:23", "rfid1:MOSI", "green", [ "v19.2", "h76.8", "v-105.6", "h144" ] ],
+    [ "esp:19", "rfid1:MISO", "green", [ "v19.2", "h134.4", "v-105.6", "h134.4" ] ],
+    [ "esp:GND.2", "rfid1:GND", "black", [ "v9.6", "h48", "v-86.4", "h134.4" ] ],
+    [ "esp:4", "rfid1:RST", "green", [ "v19.2", "h182.4", "v-105.6", "h124.8" ] ],
+    [ "esp:3V3", "rfid1:3.3V", "green", [ "v-9.45", "h163.2", "v48" ] ],
+    [ "bz1:2", "esp:27", "green", [ "v19.2", "h-19.6" ] ],
+    [ "bz1:1", "esp:GND.1", "green", [ "v19.2", "h-48" ] ]
+  ],
+  "dependencies": {}
+}
