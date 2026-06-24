@@ -94,7 +94,7 @@ The Physical Layer contains RFID cards and the MFRC522 reader. The Edge Controll
 
 The Vert.x backend is responsible for receiving attendance events, processing RFID transactions asynchronously, maintaining staff availability state, and storing attendance records in MongoDB.
 
-![Figure 3. StaffAvail System Architecture](images/System Architecture Diagram.png)
+![Figure 3. StaffAvail System Architecture](/images/System Architecture Diagram.png)
 
 **Figure 3. StaffAvail System Architecture**
 
